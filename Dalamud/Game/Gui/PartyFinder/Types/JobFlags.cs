@@ -4,7 +4,7 @@ namespace Dalamud.Game.Gui.PartyFinder.Types;
 /// Job flags for the <see cref="PartyFinder"/> class.
 /// </summary>
 [Flags]
-public enum JobFlags
+public enum JobFlags : uint
 {
     /// <summary>
     /// Gladiator (GLD).
@@ -159,5 +159,5 @@ public enum JobFlags
     /// <summary>
     /// Pictomancer (PCT).
     /// </summary>
-    Pictomancer = 1 << 31,
+    Pictomancer = 1U << 31,
 }
